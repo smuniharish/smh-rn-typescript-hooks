@@ -152,6 +152,6 @@
     ]
   },
   "dependencies": {
-    "react-form-validate-hooks": "^1.0.0"
+    "smh-react-typescript-hooks": "^0.0.1"
   }
 }

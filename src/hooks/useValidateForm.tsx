@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDefaultReducer } from 'react-form-validate-hooks';
+import { useDefaultReducer } from 'smh-react-typescript-hooks';
 
 interface optionsInterface {
   type: string;

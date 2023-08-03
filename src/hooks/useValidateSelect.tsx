@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useDefaultReducer } from 'react-form-validate-hooks';
+import { useDefaultReducer } from 'smh-react-typescript-hooks';
 interface OptionsInterfaceSelect {
   itemsList: any;
   isRequired: boolean;
