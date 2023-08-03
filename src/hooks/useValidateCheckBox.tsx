@@ -7,7 +7,7 @@ interface optionsInterfaceCheckBox {
   checkedColor?: string;
   uncheckedColor?: string;
   disabled?: boolean;
-  onChangeCallBack?: boolean;
+  onChangeCallBack?: any;
 }
 const initialState = {
   isChecked: false,
@@ -66,7 +66,9 @@ const useValidateCheckBox = (options: optionsInterfaceCheckBox) => {
     }
   }, [isChecked]);
   const onValueChangeHandler = () => {
-    multipleAction({ isChecked: !isChecked });
+    const v = !isChecked;
+    multipleAction({ isChecked: v });
+    onChangeCallBack ? onChangeCallBack(v) : null;
   };
   const reset = () => {
     multipleAction(initialState);
@@ -75,7 +77,6 @@ const useValidateCheckBox = (options: optionsInterfaceCheckBox) => {
   const result = {
     color: color,
     inputIsDisabled: disabled,
-    onChangeCallBack: onChangeCallBack,
     onValueChangeHandler: onValueChangeHandler,
     value: isChecked,
     isValid: isValid,

@@ -164,6 +164,11 @@ const useValidateSelect = (options: OptionsInterfaceSelect) => {
     multipleAction({ selectedItems: item });
     onSelectItemCallBack ? onSelectItemCallBack(item) : null;
   };
+  const reset = () => {
+    multipleAction(initialState);
+    setValue(null);
+    setItemsList(null);
+  };
   const hasError = !isValid && isFocus;
   const result = {
     open: open,
@@ -186,6 +191,7 @@ const useValidateSelect = (options: OptionsInterfaceSelect) => {
     isValid: isValid,
     hasError: hasError,
     customError: customError,
+    reset: reset,
   };
   // console.log("result", result,state);
   return result;
