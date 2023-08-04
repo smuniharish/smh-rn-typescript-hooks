@@ -48,6 +48,7 @@ We tested this with the help of [rn-material-ui-textfield](https://github.com/ga
 | `valueChangeCallback` | `function` | it will triggers when the value changes | None | False |
 
 * Structured Parameters
+
 | Parameter | Definition | type |
 | :-------- | :------- | :----- |
 | `label` | Text Input label | string |
@@ -178,6 +179,7 @@ export default TextInput;
 We tested this with the help of [expo-checkbox](https://docs.expo.dev/versions/latest/sdk/checkbox/) package.I would like to recommand to use the same. Other packages also work.
 ##### props
 * options
+
 | Parameter | Type     | Description | Default| **Required* |
 | :-------- | :------- | :-------| :------- | :----- |
 | `isRequired` | `boolean` | It will checks the applied field is mandatory or not | None | True |
@@ -189,6 +191,7 @@ We tested this with the help of [expo-checkbox](https://docs.expo.dev/versions/l
 | `disabled` | `boolean` | the checkbox is disabled or not | None | False |
 
 * Structured Parameters
+
 | Parameter | Definition | type |
 | :-------- | :------- | :----- |
 | `color` | Color of the checkbox | string |
@@ -263,6 +266,7 @@ const styles = StyleSheet.create({
 We tested this with the help of [react-native-dropdown-picker](https://hossein-zare.github.io/react-native-dropdown-picker-website/) package.I would like to recommand to use the same. Other packages also work.
 ##### props
 * options
+
 | Parameter | Type     | Description | Default| **Required* |
 | :-------- | :------- | :-------| :------- | :----- |
 | `itemsList` | `items[]` | the list of objects having label value pairs | None | True |
@@ -282,6 +286,7 @@ We tested this with the help of [react-native-dropdown-picker](https://hossein-z
 | `onCloseCallBack` | `function` | function to callback when the picker is closed | #a8a8a8 | False |
 
 * Structured Parameters
+
 | Parameter | Definition | type |
 | :-------- | :------- | :----- |
 | `open` | To open or close the picker | boolean |
