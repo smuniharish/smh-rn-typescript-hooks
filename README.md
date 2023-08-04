@@ -25,7 +25,7 @@ We tested this with the help of [rn-material-ui-textfield](https://github.com/ga
 ##### props
 * options
 | Parameter | Type     | Description | Default| **Required* |
-| :-------- | :------- | :-------| :------- | :----- |
+| -------- | ------- | -------| ------- | ----- |
 | `type` | `string` | either "number" or "string" | None | True |
 | `label` | `string` | TextInput Label Name | None | True |
 | `isRequired` | `boolean` | It will checks the applied field is mandatory or not | None | True |
@@ -48,7 +48,7 @@ We tested this with the help of [rn-material-ui-textfield](https://github.com/ga
 
 * Structured Parameters
 | Parameter | Definition | type |
-| :-------- | :------- | :----- |
+| -------- | ------- | ----- |
 | `label` | Text Input label | string |
 | `value` | Text Input value | string |
 | `required` | To get the Text Input is Required or not | boolean |
@@ -178,7 +178,7 @@ We tested this with the help of [expo-checkbox](https://docs.expo.dev/versions/l
 ##### props
 * options
 | Parameter | Type     | Description | Default| **Required* |
-| :-------- | :------- | :-------| :------- | :----- |
+| -------- | ------- | -------| ------- | ----- |
 | `isRequired` | `boolean` | It will checks the applied field is mandatory or not | None | True |
 | `value` | `boolean` | value of the checkbox | false | True |
 | `validError` | `string` | customizing the error on not Valid | Please tick checkbox !!! | False |
@@ -189,7 +189,7 @@ We tested this with the help of [expo-checkbox](https://docs.expo.dev/versions/l
 
 * Structured Parameters
 | Parameter | Definition | type |
-| :-------- | :------- | :----- |
+| -------- | ------- | ----- |
 | `color` | Color of the checkbox | string |
 | `value` | value of the checkbox | boolean |
 | `isValid` | To get the given input is valid or not | boolean |
@@ -221,7 +221,7 @@ const CheckBox=()=> {
     value:false,
     checkedColor:'#4630EB'
 })
-console.log("checkboxValue",checkBoxValue)
+// console.log("checkboxValue",checkBoxValue)
 
   return (
     <View style={styles.container}>
@@ -263,7 +263,7 @@ We tested this with the help of [react-native-dropdown-picker](https://hossein-z
 ##### props
 * options
 | Parameter | Type     | Description | Default| **Required* |
-| :-------- | :------- | :-------| :------- | :----- |
+| -------- | ------- | -------| ------- | ----- |
 | `itemsList` | `items[]` | the list of objects having label value pairs | None | True |
 | `isRequired` | `boolean` | to make it whether it will be required or not | None | True |
 | `defaultValue` | `item` | object of label value pair | None | False |
@@ -282,7 +282,7 @@ We tested this with the help of [react-native-dropdown-picker](https://hossein-z
 
 * Structured Parameters
 | Parameter | Definition | type |
-| :-------- | :------- | :----- |
+| -------- | ------- | ----- |
 | `open` | To open or close the picker | boolean |
 | `itemsList` | To get the list of items | items[] |
 | `value` | value of the picked items | item or items[] |
