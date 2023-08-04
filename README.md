@@ -1,15 +1,15 @@
-# smh-react-native-typescript-hooks
+# smh-rn-typescript-hooks
 
-smh-react-native-typescript-hooks
+smh-rn-typescript-hooks
 
 ## Installation
 React Native
 ```sh
-npm install --save smh-react-native-typescript-hooks
+npm install --save smh-rn-typescript-hooks
 ```
 Expo
 ```sh
-npx expo install smh-react-native-typescript-hooks
+npx expo install smh-rn-typescript-hooks
 ```
 ### Available Hooks
 * useValidateForm
@@ -76,7 +76,7 @@ import {
   OutlinedTextField,
 } from "rn-material-ui-textfield";
 import { StyleSheet, Text, View } from "react-native";
-import { useValidateForm } from "smh-react-native-typescript-hooks";
+import { useValidateForm } from "smh-rn-typescript-hooks";
 
 const TextInput = () => {
   const {
@@ -208,7 +208,7 @@ We tested this with the help of [expo-checkbox](https://docs.expo.dev/versions/l
 import Checkbox from 'expo-checkbox';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { useValidateCheckBox } from 'smh-react-native-typescript-hooks';
+import { useValidateCheckBox } from 'smh-rn-typescript-hooks';
 
 const CheckBox=()=> {
   const {
@@ -316,7 +316,7 @@ We tested this with the help of [react-native-dropdown-picker](https://hossein-z
 import { View, Text } from 'react-native'
 import React, { Fragment, useEffect } from 'react'
 import DropDownPicker from "react-native-dropdown-picker";
-import { useValidateSelect } from 'smh-react-native-typescript-hooks';
+import { useValidateSelect } from 'smh-rn-typescript-hooks';
 
 const Dropdown = () => {
     const {
@@ -398,7 +398,7 @@ export default Dropdown
 #### useGetDeviceOrientation()
 ### example
 ```js
-import { useGetDeviceOrientation } from 'smh-react-native-typescript-hooks';
+import { useGetDeviceOrientation } from 'smh-rn-typescript-hooks';
 const component = () =>{
   const deviceOrientation = useGetDeviceOrientation();
   console.log(deviceOrientation)
