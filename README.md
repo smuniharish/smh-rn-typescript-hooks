@@ -23,7 +23,7 @@ This packages is customized react-native hooks for making development easier, fa
 #### useValidateForm()
 We tested this with the help of [rn-material-ui-textfield](https://github.com/gabrieldonadel/rn-material-ui-textfield#readme) package.I would like to recommand to use the same. Other packages also work.
 ##### props
-* options
+* options <br>
 | Parameter | Type     | Description | Default| **Required* |
 | -------- | ------- | -------| ------- | ----- | -------- |
 | `type` | `string` | either "number" or "string" | None | True |
