@@ -25,7 +25,7 @@ We tested this with the help of [rn-material-ui-textfield](https://github.com/ga
 ##### props
 * options
 | Parameter | Type     | Description | Default| **Required* |
-| -------- | ------- | -------| ------- | ----- |
+| -------- | ------- | -------| ------- | ----- | -------- |
 | `type` | `string` | either "number" or "string" | None | True |
 | `label` | `string` | TextInput Label Name | None | True |
 | `isRequired` | `boolean` | It will checks the applied field is mandatory or not | None | True |
