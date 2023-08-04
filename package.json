@@ -1,6 +1,6 @@
 {
-  "name": "smh-react-native-typescript-hooks",
-  "version": "0.0.2",
+  "name": "smh-rn-typescript-hooks",
+  "version": "0.0.1",
   "description": "react-native-form-validate-hooks",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -44,9 +44,9 @@
   "author": "S MUNI HARISH (smuniharish) <samamuniharish@gmail.com> (https://github.com/smuniharish/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smuniharish/smh-react-native-typescript-hooks/issues"
+    "url": "https://github.com/smuniharish/smh-rn-typescript-hooks/issues"
   },
-  "homepage": "https://github.com/smuniharish/smh-react-native-typescript-hooks#readme",
+  "homepage": "https://github.com/smuniharish/smh-rn-typescript-hooks#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
