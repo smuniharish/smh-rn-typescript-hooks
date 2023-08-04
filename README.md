@@ -413,7 +413,7 @@ Contribution are always welcome, no matter how large or small !
 
 We want this community to be friendly and respectful to each other.Please follow it in all your interactions with the project.
 
-Please feel free to drop me a mail [S MUNI HARISH](samamuniharish@gmail.com)
+Please feel free to drop me a mail [S MUNI HARISH](mailto:samamuniharish@gmail.com?subject=[GitHub])
 
 ## Acknowledgements
 
