@@ -15,7 +15,6 @@ npx expo install smh-rn-typescript-hooks
 * useValidateForm
 * useValidateSelect
 * useValidateCheckBox
-* useGetDeviceOrientation
 
 ## Usage
 This packages is customized react-native hooks for making development easier, faster and more performant
@@ -395,17 +394,7 @@ const Dropdown = () => {
 
 export default Dropdown
 ```
-#### useGetDeviceOrientation()
-### example
-```js
-import { useGetDeviceOrientation } from 'smh-rn-typescript-hooks';
-const component = () =>{
-  const deviceOrientation = useGetDeviceOrientation();
-  console.log(deviceOrientation)
-  //output : depends on the device orientation
-  landscape or portrait
-}
-```
+
 And we're done 🎉
 ## Contributing
 
