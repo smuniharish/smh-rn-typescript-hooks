@@ -115,6 +115,7 @@ const useValidateForm = (options: optionsInterface) => {
   }, [validationPattern]);
 
   useEffect(() => {
+    multipleAction({isValid:true,customError:null})
     if (isRequired) {
       if (isFocus && !inputValue) {
         multipleAction({ isValid: false, customError: focusError });
@@ -125,47 +126,47 @@ const useValidateForm = (options: optionsInterface) => {
       if (!inputValue) {
         multipleAction({ isValid: false });
       }
-    }
-    if (validationPattern) {
-      if (validationPattern && inputValue) {
-        const valid = validationPattern.test(inputValue);
-        multipleAction({
-          isValid: valid,
-          customError: valid ? null : validError,
-        });
-      }
-    } else {
-      const numInput =
-        inputValue && type === 'number'
-          ? isNaN(parseInt(inputValue))
-            ? 0
-            : parseInt(inputValue)
-          : 0;
-      if (isNaN(inputValue) && type === 'number') {
-        multipleAction({ isValid: false, customError: validError });
+      if (validationPattern) {
+        if (validationPattern && inputValue) {
+          const valid = validationPattern.test(inputValue);
+          multipleAction({
+            isValid: valid,
+            customError: valid ? null : validError,
+          });
+        }
       } else {
-        if (minValue && isFocus && numInput < minValue) {
-          multipleAction({ isValid: false, customError: minValueError });
+        const numInput =
+          inputValue && type === 'number'
+            ? isNaN(parseInt(inputValue))
+              ? 0
+              : parseInt(inputValue)
+            : 0;
+        if (isNaN(inputValue) && type === 'number') {
+          multipleAction({ isValid: false, customError: validError });
+        } else {
+          if (minValue && isFocus && numInput < minValue) {
+            multipleAction({ isValid: false, customError: minValueError });
+          }
+          if (maxValue && isFocus && numInput > maxValue) {
+            multipleAction({ isValid: false, customError: maxValueError });
+          }
         }
-        if (maxValue && isFocus && numInput > maxValue) {
-          multipleAction({ isValid: false, customError: maxValueError });
+        if (type === 'string' && inputValue) {
+          if (minLength && isFocus && inputValue.length < minLength) {
+            multipleAction({ isValid: false, customError: minLengthError });
+          } else if (maxLength && isFocus && inputValue.length > maxLength) {
+            multipleAction({ isValid: false, customError: maxLengthError });
+          }
         }
+        // else {
+        //   multipleAction({ isValid: true, customError: null });
+        // }
       }
-      if (type === 'string' && inputValue) {
-        if (minLength && isFocus && inputValue.length < minLength) {
-          multipleAction({ isValid: false, customError: minLengthError });
-        } else if (maxLength && isFocus && inputValue.length > maxLength) {
-          multipleAction({ isValid: false, customError: maxLengthError });
-        }
-      }
-      // else {
-      //   multipleAction({ isValid: true, customError: null });
-      // }
     }
   }, [isFocus, inputValue]);
   const hasError = !isValid && isFocus;
   const valueChangeHandler = (text: string) => {
-    multipleAction({ inputValue: text, isValid: true, customError: null });
+    multipleAction({ inputValue: text });
     valueChangeCallback ? valueChangeCallback(text) : null;
   };
   const valueFocusHandler = () => {
