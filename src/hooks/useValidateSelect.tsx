@@ -108,12 +108,14 @@ const useValidateSelect = (options: OptionsInterfaceSelect) => {
         if (!value && !isFocus) {
           multipleAction({ isValid: false });
         } else if (isFocus || isBlur) {
-          if (value.length < min) {
-            multipleAction({ isValid: false, customError: minError });
-          } else if (value.length > max) {
-            multipleAction({ isValid: false, customError: maxError });
-          } else {
-            multipleAction({ isValid: true, customError: null });
+          if(value){
+            if (value.length < min) {
+              multipleAction({ isValid: false, customError: minError });
+            } else if (value.length > max) {
+              multipleAction({ isValid: false, customError: maxError });
+            } else {
+              multipleAction({ isValid: true, customError: null });
+            }
           }
         } else {
           multipleAction({ isValid: true, customError: null });
