@@ -34,13 +34,11 @@ const useValidateSelect = (options: OptionsInterfaceSelect) => {
   options.minError = options.minError || 'Min Selection Expected !!!';
   options.maxError = options.maxError || 'Max Selections reached !!!';
   options.validError = options.validError || 'Given value is not valid !!!';
-  const [value, setValue] = useState(
-    options.defaultValue ? options.defaultValue : null
-  );
+  const initialValueInState = options.defaultValue ? options.defaultValue : null
+  const initialItemsInState = options.itemsList ? options.itemsList : []
+  const [value, setValue] = useState(initialValueInState);
   const { state, multipleAction } = useDefaultReducer(initialState);
-  const [itemsList, setItemsList] = useState(
-    options.itemsList ? options.itemsList : []
-  );
+  const [itemsList, setItemsList] = useState(initialItemsInState);
   const {
     isRequired,
     defaultValue,
@@ -168,8 +166,8 @@ const useValidateSelect = (options: OptionsInterfaceSelect) => {
   };
   const reset = () => {
     multipleAction(initialState);
-    setValue(null);
-    setItemsList(null);
+    setValue(initialValueInState);
+    setItemsList(initialItemsInState);
   };
   const hasError = !isValid && isFocus;
   const result = {
