@@ -162,6 +162,35 @@ const useValidateForm = (options: optionsInterface) => {
         //   multipleAction({ isValid: true, customError: null });
         // }
       }
+    }else{
+      {
+        const numInput =
+          inputValue && type === 'number'
+            ? isNaN(parseInt(inputValue))
+              ? 0
+              : parseInt(inputValue)
+            : 0;
+        if (isNaN(inputValue) && type === 'number') {
+          multipleAction({ isValid: false, customError: validError });
+        } else {
+          if (minValue && isFocus && numInput < minValue) {
+            multipleAction({ isValid: false, customError: minValueError });
+          }
+          if (maxValue && isFocus && numInput > maxValue) {
+            multipleAction({ isValid: false, customError: maxValueError });
+          }
+        }
+        if (type === 'string' && inputValue) {
+          if (minLength && isFocus && inputValue.length < minLength) {
+            multipleAction({ isValid: false, customError: minLengthError });
+          } else if (maxLength && isFocus && inputValue.length > maxLength) {
+            multipleAction({ isValid: false, customError: maxLengthError });
+          }
+        }
+        // else {
+        //   multipleAction({ isValid: true, customError: null });
+        // }
+      }
     }
   }, [isFocus, inputValue]);
   const hasError = !isValid && isFocus;
@@ -185,6 +214,8 @@ const useValidateForm = (options: optionsInterface) => {
     keyboardType: keyboard,
     defaultValue: inputValue,
     isValid: isValid,
+    isFocused:isFocus,
+    isBlured:isBlur,
     hasError: hasError,
     customError: customError,
     inputIsDisabled: isDisabled || false,

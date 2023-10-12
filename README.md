@@ -56,6 +56,8 @@ We tested this with the help of [rn-material-ui-textfield](https://github.com/ga
 | `keyboardType` | To get the Text Input keyboard type | string |
 | `defaultValue` | To get the default text input value | string or number |
 | `isValid` | To get the given input is valid or not | boolean |
+| `isFocused` | To get the given input is Focused or not | boolean |
+| `isBlured` | To get the given input is Blured or not | boolean |
 | `hasError` | To get the given value is error or not | boolean |
 | `customError` | To know the exact error | string |
 | `inputIsDisabled` | To get whether input is disabled or not | boolean |
@@ -85,6 +87,8 @@ const TextInput = () => {
     keyboardType: textKeyboardType,
     defaultValue: textDefaultValue,
     isValid: textIsValid,
+    isFocused:textIsFocused,
+    isBlured:textIsBlured,
     hasError: textHasError,
     customError: textCustomError,
     inputIsDisabled: textIsDisabled,
