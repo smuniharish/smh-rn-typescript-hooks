@@ -115,7 +115,7 @@ const useValidateForm = (options: optionsInterface) => {
   }, [validationPattern]);
 
   useEffect(() => {
-    multipleAction({isValid:true,customError:null})
+    multipleAction({ isValid: true, customError: null });
     if (isRequired) {
       if (isFocus && !inputValue) {
         multipleAction({ isValid: false, customError: focusError });
@@ -162,7 +162,7 @@ const useValidateForm = (options: optionsInterface) => {
         //   multipleAction({ isValid: true, customError: null });
         // }
       }
-    }else{
+    } else {
       {
         const numInput =
           inputValue && type === 'number'
@@ -214,8 +214,8 @@ const useValidateForm = (options: optionsInterface) => {
     keyboardType: keyboard,
     defaultValue: inputValue,
     isValid: isValid,
-    isFocused:isFocus,
-    isBlured:isBlur,
+    isFocused: isFocus,
+    isBlured: isBlur,
     hasError: hasError,
     customError: customError,
     inputIsDisabled: isDisabled || false,
