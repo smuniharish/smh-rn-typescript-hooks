@@ -1,6 +1,6 @@
 {
   "name": "smh-rn-typescript-hooks",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "react-native-form-validate-hooks",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -153,6 +153,6 @@
     ]
   },
   "dependencies": {
-    "smh-react-typescript-hooks": "^0.0.1"
+    "smh-react-typescript-hooks": "^0.0.2"
   }
 }
