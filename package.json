@@ -51,16 +51,16 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.2.2",
-    "@evilmartians/lefthook": "^1.7.13",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@evilmartians/lefthook": "^1.7.15",
     "@react-native-community/eslint-config": "^3.2.0",
-    "@release-it/conventional-changelog": "^8.0.1",
-    "@types/jest": "^29.5.12",
-    "@types/react": "^18.3.3",
+    "@release-it/conventional-changelog": "^8.0.2",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^18.3.8",
     "@types/react-native": "^0.73.0",
-    "commitlint": "^19.4.0",
+    "commitlint": "^19.5.0",
     "del-cli": "^5.1.0",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "jest": "^29.7.0",
@@ -68,20 +68,14 @@
     "pod-install": "^0.2.2",
     "prettier": "^3.3.3",
     "react": "18.3.1",
-    "react-native": "^0.75.1",
-    "react-native-builder-bob": "^0.29.1",
+    "react-native": "^0.75.3",
+    "react-native-builder-bob": "^0.30.2",
     "release-it": "^17.6.0",
-    "typescript": "^5.5.4"
-  },
-  "resolutions": {
-    "@types/react": "17.0.21"
+    "typescript": "^5.6.2"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
-  },
-  "engines": {
-    "node": ">= 16.0.0"
   },
   "packageManager": "^yarn@1.22.15",
   "jest": {
@@ -153,7 +147,7 @@
     ]
   },
   "dependencies": {
-    "smh-react-typescript-hooks": "^0.0.2",
+    "smh-react-typescript-hooks": "^0.0.4",
     "smh-rn-typescript-hooks": "file:"
   }
 }
