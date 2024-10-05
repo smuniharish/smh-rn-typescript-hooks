@@ -147,6 +147,6 @@
     ]
   },
   "dependencies": {
-    "smh-react-typescript-hooks": "^0.0.4"
+    "smh-react-typescript-hooks": "^0.0.8"
   }
 }
