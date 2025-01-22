@@ -12685,9 +12685,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smh-react-native-responsive-screen-example@workspace:example":
+"smh-react-typescript-hooks@npm:^0.0.8":
+  version: 0.0.8
+  resolution: "smh-react-typescript-hooks@npm:0.0.8"
+  peerDependencies:
+    react: ">=18"
+  checksum: 4cc7f4836b16ef00dc9a1428557308bfe87f55889e514df941bcb0cc795c6209e1de4d7466fa2ece6ed4d0e23716061e2e37c52ba8f2b54815642714901d4b66
+  languageName: node
+  linkType: hard
+
+"smh-rn-typescript-hooks-example@workspace:example":
   version: 0.0.0-use.local
-  resolution: "smh-react-native-responsive-screen-example@workspace:example"
+  resolution: "smh-rn-typescript-hooks-example@workspace:example"
   dependencies:
     "@babel/core": ^7.20.0
     "@expo/metro-runtime": ~4.0.1
@@ -12701,9 +12710,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"smh-react-native-responsive-screen@workspace:.":
+"smh-rn-typescript-hooks@workspace:.":
   version: 0.0.0-use.local
-  resolution: "smh-react-native-responsive-screen@workspace:."
+  resolution: "smh-rn-typescript-hooks@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^19.6.0
     "@evilmartians/lefthook": ^1.5.0
@@ -12722,6 +12731,7 @@ __metadata:
     react-native: 0.76.6
     react-native-builder-bob: ^0.35.2
     release-it: ^17.10.0
+    smh-react-typescript-hooks: ^0.0.8
     typescript: ^5.2.2
   peerDependencies:
     react: "*"

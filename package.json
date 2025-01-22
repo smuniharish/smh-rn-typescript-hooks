@@ -1,7 +1,7 @@
 {
-  "name": "smh-react-native-responsive-screen",
-  "version": "0.1.3",
-  "description": "smh-react-native-responsive-screen",
+  "name": "smh-rn-typescript-hooks",
+  "version": "0.0.14",
+  "description": "smh-rn-typescript-hooks",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
   "module": "./lib/module/index.js",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace smh-react-native-responsive-screen-example",
+    "example": "yarn workspace smh-rn-typescript-hooks-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,7 +41,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smuniharish/smh-react-native-responsive-screen.git"
+    "url": "git+https://github.com/smuniharish/smh-rn-typescript-hooks.git"
   },
   "contributors": [
     "S MUNI HARISH"
@@ -49,9 +49,9 @@
   "author": "smuniharish <samamuniharish@gmail.com> (https://github.com/smuniharish)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smuniharish/smh-react-native-responsive-screen/issues"
+    "url": "https://github.com/smuniharish/smh-rn-typescript-hooks/issues"
   },
-  "homepage": "https://github.com/smuniharish/smh-react-native-responsive-screen#readme",
+  "homepage": "https://github.com/smuniharish/smh-rn-typescript-hooks#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -188,5 +188,8 @@
     "languages": "js",
     "type": "library",
     "version": "0.45.5"
+  },
+  "dependencies": {
+    "smh-react-typescript-hooks": "^0.0.8"
   }
 }

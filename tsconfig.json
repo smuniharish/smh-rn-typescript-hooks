@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "smh-react-native-responsive-screen": ["./src/index"]
+      "smh-rn-typescript-hooks": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
