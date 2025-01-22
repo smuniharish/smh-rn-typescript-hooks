@@ -1,6 +1,6 @@
 {
   "name": "smh-rn-typescript-hooks",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "smh-rn-typescript-hooks",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
