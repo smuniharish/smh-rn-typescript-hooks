@@ -1,6 +1,6 @@
 {
   "name": "smh-react-native-responsive-screen",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "smh-react-native-responsive-screen",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
