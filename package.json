@@ -54,6 +54,9 @@
     "type": "git",
     "url": "git+https://github.com/smuniharish/smh-react-native-responsive-screen.git"
   },
+  "contributors": [
+    "S MUNI HARISH"
+  ],
   "author": "smuniharish <samamuniharish@gmail.com> (https://github.com/smuniharish)",
   "license": "MIT",
   "bugs": {
