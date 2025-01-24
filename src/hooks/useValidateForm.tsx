@@ -31,22 +31,12 @@ const initialState = {
   customError: null,
 };
 const useValidateForm = (options: optionsInterface) => {
-  options.minValueError =
-    options.minValueError || 'Minimum value is required !!!';
-  options.maxValueError = options.maxValueError || 'Maximum value reached !!!';
-  options.minLengthError =
-    options.minLengthError || 'Minimum Length is required !!!';
-  options.maxLengthError =
-    options.maxLengthError || 'Maximum Length is reached !!!';
-  options.focusError = options.focusError || 'Value is Required !!!';
-  options.validError = options.validError || 'Given value is not valid !!!';
-  options.keyboard = options.keyboard || 'default';
   const { state, multipleAction } = useDefaultReducer(initialState);
   const {
     type,
     label,
     isRequired,
-    keyboard,
+    keyboard = 'default',
     minValue,
     maxValue,
     minLength,
@@ -55,12 +45,12 @@ const useValidateForm = (options: optionsInterface) => {
     isDisabled,
     isEditable,
     validationPattern,
-    minValueError,
-    maxValueError,
-    minLengthError,
-    maxLengthError,
-    focusError,
-    validError,
+    minValueError = 'Minimum value is required !!!',
+    maxValueError = 'Maximum value reached !!!',
+    minLengthError = 'Minimum Length is required !!!',
+    maxLengthError = 'Maximum Length is reached !!!',
+    focusError = 'Value is Required !!!',
+    validError = 'Given value is not valid !!!',
     valueChangeCallback,
   } = options;
   const { inputValue, isFocus, isBlur, isValid, customError } = state;

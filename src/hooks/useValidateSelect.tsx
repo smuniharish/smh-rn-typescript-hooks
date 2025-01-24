@@ -27,13 +27,6 @@ const initialState = {
   customError: null,
 };
 const useValidateSelect = (options: OptionsInterfaceSelect) => {
-  options.min = options.min || 0;
-  options.max = options.max || 100;
-  options.multiple = options.multiple || false;
-  options.disabled = options.disabled || false;
-  options.minError = options.minError || 'Min Selection Expected !!!';
-  options.maxError = options.maxError || 'Max Selections reached !!!';
-  options.validError = options.validError || 'Given value is not valid !!!';
   const initialValueInState = options.defaultValue
     ? options.defaultValue
     : null;
@@ -44,13 +37,13 @@ const useValidateSelect = (options: OptionsInterfaceSelect) => {
   const {
     isRequired,
     defaultValue,
-    multiple,
-    min,
-    max,
-    disabled,
-    validError,
-    minError,
-    maxError,
+    multiple = false,
+    min = 0,
+    max = 100,
+    disabled = false,
+    validError = 'Given value is not valid !!!',
+    minError = 'Min Selection Expected !!!',
+    maxError = 'Max Selections reached !!!',
     onChangeValueCallBack,
     onSelectItemCallBack,
     onPressCallBack,

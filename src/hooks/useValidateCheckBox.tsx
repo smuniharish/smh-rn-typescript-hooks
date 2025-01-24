@@ -16,19 +16,15 @@ const initialState = {
   color: null,
 };
 const useValidateCheckBox = (options: optionsInterfaceCheckBox) => {
-  options.checkedColor = options.checkedColor || '#000000';
-  options.uncheckedColor = options.uncheckedColor || '#a8a8a8';
-  options.value = options.value || false;
-  options.validError = options.validError || 'Please tick checkbox !!!';
   const { state, multipleAction } = useDefaultReducer(initialState);
   const {
     isRequired,
-    checkedColor,
-    uncheckedColor,
+    checkedColor = '#000000',
+    uncheckedColor = '#a8a8a8',
     disabled,
     onChangeCallBack,
-    value,
-    validError,
+    value = false,
+    validError = 'Please tick checkbox !!!',
   } = options;
   const { isChecked, isValid, customError, color } = state;
   useEffect(() => {
