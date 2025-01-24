@@ -7,6 +7,7 @@
   "module": "./lib/module/index.js",
   "types": "./lib/typescript/commonjs/src/index.d.ts",
   "files": [
+    "src",
     "lib",
     "android",
     "ios",
@@ -73,7 +74,8 @@
     "react-native": "0.76.6",
     "react-native-builder-bob": "^0.35.2",
     "release-it": "^17.10.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "smh-react-typescript-hooks": "^0.0.8"
   },
   "resolutions": {
     "@types/react": "^18.2.44"
@@ -188,8 +190,5 @@
     "languages": "js",
     "type": "library",
     "version": "0.45.5"
-  },
-  "dependencies": {
-    "smh-react-typescript-hooks": "^0.0.8"
   }
 }
