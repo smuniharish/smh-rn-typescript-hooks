@@ -416,10 +416,16 @@ Thanks to the authors of these libraries for inspiration
 
 To keep this library maintained and up-to-date please consider [sponsoring it on GitHub](https://github.com/sponsors/smuniharish). Or if you are looking for a private support or help in customizing the experience, then reach out to me on Linkedin [@smuniharish](https://www.linkedin.com/in/smuniharish).
 
-## License
+---
 
-[MIT](./LICENSE)
+## 🧑‍💻 Author
+
+Made with ❤️ by [S MUNI HARISH](mailto:samamuniharish@gmail.com)
+
+[GitHub](https://github.com/smuniharish) • [LinkedIn](https://www.linkedin.com/in/smuniharish)
 
 ---
 
-Made with ❤️
+## 📄 License
+
+Apache-2.0 License – see [LICENSE](./LICENSE)
